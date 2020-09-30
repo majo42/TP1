@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+</html class="no-js" lang="es">
+<meta name="description" content="" />
+<title>Travelers</title>
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+<link rel="stylesheet" href="fontawesome/css/all.css">
+
+<style>
+  .body {
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .header {
+    background-color: #beebe9;
+  }
+
+  .div {
+    height: 700px;
+  }
+</style>
+</head>
+
+<body class="body">
+  <header>
+    <div class="header">
+      <div class="media">
+        <img src="img/logo.png" class="mr-3" alt="..." style="height: 150px; padding: 5px;">
+        <div class="media-body">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fas fa-heart"></i> Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-comment"></i> Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-user-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </header>
+  <main>
+    <section>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand"><i class="fas fa-home"></i> Inicio</a>
+        <a class="navbar-brand"><i class="fas fa-plane"></i> Destinos</a>
+        <a class="navbar-brand"><i class="fas fa-bed"></i> Hoteles</a>
+        <a class="navbar-brand"><i class="fas fa-snowboarding"></i> Actividades</a>
+        <a class="navbar-brand"><i class="fas fa-phone"></i> Contacto</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="¿A donde vas?" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </nav>
+    </section>
+    <br>
+    <section>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card div">
+            <div class="card-body">
+              <h5 class="card-title">Registro</h5>
+              <br>
+              <form>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Nombre*</label>
+                    <input type="text" class="form-control" placeholder="Inserte su nombre">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Apellido*</label>
+                    <input type="text" class="form-control" placeholder="Inserte su apellido">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email*</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="nombre@ejemplo.com">
+                </div>
+                <div>
+                  <label for="formGroupExampleInput">Dirección</label>
+                  <input type="text" class="form-control" placeholder="Inserte su dirección">
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">País*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Argentina</option>
+                      <option>Bolivia</option>
+                      <option>Brasil</option>
+                      <option>Chile</option>
+                      <option>Paraguay</option>
+                      <option>Uruguay</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Estado/Provincia*</label>
+                    <input type="text" class="form-control" placeholder="Inserte su estado/provincia">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Ciudad*</label>
+                    <input type="text" class="form-control" placeholder="Inserte su ciudad">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Código Postal*</label>
+                    <input type="number" class="form-control" placeholder="Inserte su código postal">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Teléfono*</label>
+                    <input type="number" class="form-control" placeholder="Inserte su número telefónico">
+                  </div>
+                </div>
+                <br>
+                <a href="#" class="btn btn-success">Guardar</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card div">
+            <div class="card-body">
+              <h5 class="card-title">Método de pago</h5>
+              <br>
+              <form>
+                <div class="col-md-8 text-right" style="margin-top: -5px;">
+                  <img src="https://img.icons8.com/color/36/000000/visa.png" />
+                  <img src="https://img.icons8.com/color/36/000000/mastercard.png" />
+                  <img src="https://img.icons8.com/color/36/000000/amex.png" />
+                </div>
+                <br>
+                <div>
+                  <label for="formGroupExampleInput">Nombre del titular de la tarjeta</label>
+                  <input type="text" class="form-control" placeholder="Inserte nombre del titular de la tarjeta">
+                </div>
+                <br>
+                <div>
+                  <label for="formGroupExampleInput">Número de tarjeta</label>
+                  <input type="number" class="form-control" placeholder="Inserte número de tarjeta">
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <label for="exampleFormControlSelect1">Mes*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Enero</option>
+                      <option>Febrero</option>
+                      <option>Marzo</option>
+                      <option>Abril</option>
+                      <option>Mayo</option>
+                      <option>Junio</option>
+                      <option>Julio</option>
+                      <option>Agosto</option>
+                      <option>Septiembre</option>
+                      <option>Octubre</option>
+                      <option>Noviembre</option>
+                      <option>Diciembre</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="exampleFormControlSelect1">Año*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Código de seguridad*</label>
+                    <input type="number" class="form-control" placeholder="CVV/CVC">
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <label for="formGroupExampleInput">Dirección de facturación</label>
+                  <input type="text" class="form-control" placeholder="Inserte su dirección de facturación">
+                </div>
+              </form>
+            </div>
+            <div style="align-items: flex-end; padding: 25px;">
+              <a href="#" class="btn btn-success">Guardar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card div">
+            <div class="card-body">
+              <h5 class="card-title">Detalles del paquete</h5>
+              <br>
+              <form>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">Cantidad de adultos*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">Cantidad de niños*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email*</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="nombre@ejemplo.com">
+                </div>
+                <div>
+                  <label for="formGroupExampleInput">Dirección</label>
+                  <input type="text" class="form-control" placeholder="Inserte su dirección">
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">País*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Argentina</option>
+                      <option>Bolivia</option>
+                      <option>Brasil</option>
+                      <option>Chile</option>
+                      <option>Paraguay</option>
+                      <option>Uruguay</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Estado/Provincia*</label>
+                    <input type="text" class="form-control" placeholder="Inserte su estado/provincia">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Ciudad*</label>
+                    <input type="text" class="form-control" placeholder="Inserte su ciudad">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Código Postal*</label>
+                    <input type="number" class="form-control" placeholder="Inserte su código postal">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Teléfono*</label>
+                    <input type="number" class="form-control" placeholder="Inserte su número telefónico">
+                  </div>
+                </div>
+                <br>
+                <a href="#" class="btn btn-success">Guardar</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card div">
+            <div class="card-body">
+              <h5 class="card-title">Datos de los pasajeros</h5>
+              <br>
+              <form>
+                <div class="col-md-8 text-right" style="margin-top: -5px;">
+                  <img src="https://img.icons8.com/color/36/000000/visa.png" />
+                  <img src="https://img.icons8.com/color/36/000000/mastercard.png" />
+                  <img src="https://img.icons8.com/color/36/000000/amex.png" />
+                </div>
+                <br>
+                <div>
+                  <label for="formGroupExampleInput">Nombre del titular de la tarjeta</label>
+                  <input type="text" class="form-control" placeholder="Inserte nombre del titular de la tarjeta">
+                </div>
+                <br>
+                <div>
+                  <label for="formGroupExampleInput">Número de tarjeta</label>
+                  <input type="number" class="form-control" placeholder="Inserte número de tarjeta">
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <label for="exampleFormControlSelect1">Mes*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Enero</option>
+                      <option>Febrero</option>
+                      <option>Marzo</option>
+                      <option>Abril</option>
+                      <option>Mayo</option>
+                      <option>Junio</option>
+                      <option>Julio</option>
+                      <option>Agosto</option>
+                      <option>Septiembre</option>
+                      <option>Octubre</option>
+                      <option>Noviembre</option>
+                      <option>Diciembre</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="exampleFormControlSelect1">Año*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Código de seguridad*</label>
+                    <input type="number" class="form-control" placeholder="CVV/CVC">
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <label for="formGroupExampleInput">Dirección de facturación</label>
+                  <input type="text" class="form-control" placeholder="Inserte su dirección de facturación">
+                </div>
+              </form>
+            </div>
+            <div style="align-items: flex-end; padding: 25px;">
+              <a href="#" class="btn btn-success">Guardar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <div class="card w-100">
+        <div class="card-body">
+          <h2 class="card-title">Suscríbete!</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Suscribirse</a>
+        </div>
+      </div>
+    </section>
+    <br>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <div class="d-flex justify-content-around">
+    <div class="p-2 bd-highlight">
+      <p>Acerca de</p>
+      <p>Sobre Nosotros</p>
+      <p>Política de Privacidad</p>
+    </div>
+    <div class="p-2 bd-highlight">
+      <p>Blog</p>
+      <p>Escribe una reseña</p>
+      <p>Unirse</p>
+      <p>Invita a tus amigos</p>
+    </div>
+    <div class="p-2 bd-highlight">
+      <p>email</p>
+      <p>teléfono</p>
+      <p>Centro de ayuda</p>
+    </div>
+    <div class="p-2 bd-highlight"><img src="img/logo.png" alt="Travelers" height="150px"></div>
+  </div>
+  <hr>
+  <div class="d-flex justify-content-around">
+    <div class="p-2 bd-highlight">Flex item 1</div>
+    <div class="p-2 bd-highlight">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-twitter-square"></i>
+    </div>
+  </div>
+</footer>
+
+</html>
