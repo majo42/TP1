@@ -1,0 +1,104 @@
+/* General */
+
+.body {
+  background-color: #fffdf9;
+  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.logo {
+  height: 100px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.nav-item {
+  font-size: larger;
+}
+
+.media-body {
+  margin: 25px;
+}
+
+.nav-principal {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.header {
+  background-color: #beebe9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.botones {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fffdf9;
+  background-color: #6883F0;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.suscripcion {
+  background-color: #ECECEC;
+  border-radius: 5px;
+  border-color: #ECECEC;
+}
+
+footer {
+  background-color: #beebe9;
+  border-radius: 5px;
+}
+
+.titulos-footer {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.links-footer {
+  color: #616161;
+}
+
+.derechos {
+  font-weight: bold;
+}
+
+.iconos {
+  font-size: xx-large;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Index */
+
+.card1 {
+  background-color: #beebe9;
+}
+
+h3 {
+  text-align: center;
+}
+
+.noticias {
+  background-color: #ffe3ed;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.img-noticias {
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Producto */
+
+/* Checkout */
+
+
+
+.div {
+  height: 700px;
+}
