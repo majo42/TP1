@@ -9,46 +9,35 @@
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 <link rel="stylesheet" href="fontawesome/css/all.css">
 
-<style>
-  .body {
-    margin: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .logo {
-    height: 100px;
-  }
-
-  .header {
-    background-color: #beebe9;
-  }
-</style>
+<link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body class="body">
   <header>
     <div class="header">
       <div class="media">
-        <img src="img/logo.png" class="mr-3" alt="..." style="height: 150px; padding: 5px;">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Inicio">
+          <a href="index.html"><img src="img/logo.png" class="logo" alt="Travelers"></a>
+        </button>
         <div class="media-body">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" href="#"><i class="fas fa-heart"></i> Favoritos</a>
+              <a class="nav-link active botones" href="#"><i class="fas fa-heart"></i> Favoritos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-comment"></i> Blog</a>
+              <a class="nav-link botones" href="#"><i class="fas fa-comment"></i> Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="far fa-user-circle"></i></a>
+              <a class="nav-link botones" href="#"><i class="far fa-user-circle"></i></a>
             </li>
           </ul>
         </div>
       </div>
+    </div>
   </header>
   <main>
     <section>
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-light bg-light nav-principal">
         <a class="navbar-brand"><i class="fas fa-home"></i> Inicio</a>
         <a class="navbar-brand"><i class="fas fa-plane"></i> Destinos</a>
         <a class="navbar-brand"><i class="fas fa-bed"></i> Hoteles</a>
@@ -92,16 +81,16 @@
     <br>
     <section>
       <div class="card-deck">
-        <div class="card">
+        <div class="card card1">
           <img src="img/machu_pichu_card.jpg" class="card-img-top" alt="Machu Pichu">
           <div class="card-body">
-            <h5 class="card-title">Visitá Machu Pichu!</h5>
+            <h5 class="card-title">Visitá Machu Picchu!</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
               content. This content is a little bit longer.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card card1">
           <img src="img/rio_de_janeiro_card.jpg" class="card-img-top" alt="Río de Janeiro">
           <div class="card-body">
             <h5 class="card-title">7 días en Río de Janeiro!</h5>
@@ -109,7 +98,7 @@
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card card1">
           <img src="img/cancun_card.jpg" class="card-img-top" alt="Cancun">
           <div class="card-body">
             <h5 class="card-title">10 días de Relax en Cancún</h5>
@@ -122,33 +111,34 @@
     </section>
     <br>
     <hr>
-    <h3 style="text-align: center;">Novedades</h3>
+    <h3>Novedades</h3>
     <hr>
     <section>
-      <div class="media">
-        <img src="img/mex.jpg" class="mr-3" alt="..." style="height: 150px;">
+      <div class="media noticias">
+        <img src="img/mex.jpg" class="mr-3 img-noticias"
+          alt="10 impresionante destinos turísticos que no conoces, en México!">
         <div class="media-body">
-          <h5 class="mt-0">10 impresionante destinos turísticos que no conoces, en México!</h5>
+          <h4 class="mt-0">10 impresionante destinos turísticos que no conoces, en México!</h4>
           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
           vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
           lacinia congue felis in faucibus.
         </div>
       </div>
       <br>
-      <div class="media">
-        <img src="img/arg.jpg" class="mr-3" alt="..." style="height: 150px;">
+      <div class="media noticias">
+        <img src="img/arg.jpg" class="mr-3 img-noticias" alt="Los mejores alojamientos en Argentina">
         <div class="media-body">
-          <h5 class="mt-0">Los mejores alojamientos en Argentina</h5>
+          <h4 class="mt-0">Los mejores alojamientos en Argentina</h4>
           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
           vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
           lacinia congue felis in faucibus.
         </div>
       </div>
       <br>
-      <div class="media">
-        <img src="img/uru.jpg" class="mr-3" alt="..." style="height: 150px;">
+      <div class="media noticias">
+        <img src="img/uru.jpg" class="mr-3 img-noticias" alt="Top 5 de restaurantes en Uruguay!">
         <div class="media-body">
-          <h5 class="mt-0">Top 5 de restaurantes en Uruguay!</h5>
+          <h4 class="mt-0">Top 5 de restaurantes en Uruguay!</h4>
           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
           vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
           lacinia congue felis in faucibus.
@@ -157,11 +147,11 @@
     </section>
     <br>
     <section>
-      <div class="card w-100">
+      <div class="card w-100 suscripcion">
         <div class="card-body">
           <h2 class="card-title">Suscríbete!</h2>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Suscribirse</a>
+          <a href="#" class="btn btn-primary botones">Suscribirse</a>
         </div>
       </div>
     </section>
@@ -177,35 +167,60 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 <footer>
   <div class="d-flex justify-content-around">
     <div class="p-2 bd-highlight">
-      <p>Acerca de</p>
-      <p>Sobre Nosotros</p>
-      <p>Política de Privacidad</p>
+      <p class="titulos-footer">Acerca de</p>
+      <a href="#" class="links-footer">
+        <p>Nosotros</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Política de Privacidad</p>
+      </a>
     </div>
     <div class="p-2 bd-highlight">
-      <p>Blog</p>
-      <p>Escribe una reseña</p>
-      <p>Unirse</p>
-      <p>Invita a tus amigos</p>
+      <p class="titulos-footer">Comunidad</p>
+      <a href="#" class="links-footer">
+        <p>Blog</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Escribe una reseña</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Unirse</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Invita a tus amigos</p>
+      </a>
     </div>
     <div class="p-2 bd-highlight">
-      <p>email</p>
-      <p>teléfono</p>
-      <p>Centro de ayuda</p>
+      <p class="titulos-footer">Contacto</p>
+      <a href="#" class="links-footer">
+        <p>contacto@travelers.com.py</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>+595 991 100 987</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Centro de ayuda</p>
+      </a>
     </div>
-    <div class="p-2 bd-highlight"><img src="img/logo.png" alt="Travelers" height="150px"></div>
+    <div class="p-2 bd-highlight"><img src="img/logo.png" class="logo" alt="Travelers"></div>
   </div>
   <hr>
   <div class="d-flex justify-content-around">
-    <div class="p-2 bd-highlight">Flex item 1</div>
+    <div class="p-2 bd-highlight derechos">© 2020 Travelers. Todos los Derechos Reservados</div>
     <div class="p-2 bd-highlight">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-facebook-square iconos"></i>
+      <i class="fab fa-instagram-square iconos"></i>
+      <i class="fab fa-twitter-square iconos"></i>
     </div>
   </div>
 </footer>

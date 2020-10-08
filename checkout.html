@@ -9,50 +9,35 @@
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 <link rel="stylesheet" href="fontawesome/css/all.css">
 
-<style>
-  .body {
-    margin: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .logo {
-    height: 100px;
-  }
-
-  .header {
-    background-color: #beebe9;
-  }
-
-  .div {
-    height: 700px;
-  }
-</style>
+<link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body class="body">
   <header>
     <div class="header">
       <div class="media">
-        <img src="img/logo.png" class="mr-3" alt="..." style="height: 150px; padding: 5px;">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Inicio">
+          <a href="index.html"><img src="img/logo.png" class="logo" alt="Travelers"></a>
+        </button>
         <div class="media-body">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" href="#"><i class="fas fa-heart"></i> Favoritos</a>
+              <a class="nav-link active botones" href="#"><i class="fas fa-heart"></i> Favoritos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-comment"></i> Blog</a>
+              <a class="nav-link botones" href="#"><i class="fas fa-comment"></i> Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="far fa-user-circle"></i></a>
+              <a class="nav-link botones" href="#"><i class="far fa-user-circle"></i></a>
             </li>
           </ul>
         </div>
       </div>
+    </div>
   </header>
   <main>
     <section>
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-light bg-light nav-principal">
         <a class="navbar-brand"><i class="fas fa-home"></i> Inicio</a>
         <a class="navbar-brand"><i class="fas fa-plane"></i> Destinos</a>
         <a class="navbar-brand"><i class="fas fa-bed"></i> Hoteles</a>
@@ -239,49 +224,76 @@
                   </div>
                 </div>
                 <br>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email*</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="nombre@ejemplo.com">
-                </div>
-                <div>
-                  <label for="formGroupExampleInput">Dirección</label>
-                  <input type="text" class="form-control" placeholder="Inserte su dirección">
-                </div>
-                <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">País*</label>
+                    <label for="exampleFormControlSelect1">Paquete seleccionado*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Argentina</option>
-                      <option>Bolivia</option>
-                      <option>Brasil</option>
-                      <option>Chile</option>
-                      <option>Paraguay</option>
-                      <option>Uruguay</option>
+                      <option>Machu Pichu</option>
+                      <option>Río de Janeiro</option>
+                      <option>Cancún</option>
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Estado/Provincia*</label>
-                    <input type="text" class="form-control" placeholder="Inserte su estado/provincia">
+                    <label for="exampleFormControlSelect1">Excursiones*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Sí</option>
+                      <option>No</option>
+                    </select>
                   </div>
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Ciudad*</label>
-                    <input type="text" class="form-control" placeholder="Inserte su ciudad">
+                    <label for="exampleFormControlSelect1">Vuelo*</label>
+                    <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-10"
+                      min="2021-03-01" max="2025-12-31">
+                    <label for="exampleFormControlSelect1">Ida</label>
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Código Postal*</label>
-                    <input type="number" class="form-control" placeholder="Inserte su código postal">
+                    <label for="exampleFormControlSelect1">Icon</label>
+                    <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-16"
+                      min="2021-03-01" max="2025-12-31">
+                    <label for="exampleFormControlSelect1">Vuelta</label>
                   </div>
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Teléfono*</label>
-                    <input type="number" class="form-control" placeholder="Inserte su número telefónico">
+                    <label for="exampleFormControlSelect1">Alojamiento*</label>
+                    <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-10"
+                      min="2021-03-01" max="2025-12-31">
+                    <label for="exampleFormControlSelect1">Entrada</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">Icon</label>
+                    <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-16"
+                      min="2021-03-01" max="2025-12-31">
+                    <label for="exampleFormControlSelect1">Salida</label>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">Traslado</label>
+                    <div>
+                      <input type="radio" name="traslado" value="si" checked>
+                      <label for="si">Sí</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="drone" value="no">
+                      <label for="no">No</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">Seguro Médico</label>
+                    <div>
+                      <input type="radio" name="seguro" value="si" checked>
+                      <label for="si">Sí</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="drone" value="no">
+                      <label for="no">No</label>
+                    </div>
                   </div>
                 </div>
                 <br>
@@ -296,64 +308,52 @@
               <h5 class="card-title">Datos de los pasajeros</h5>
               <br>
               <form>
-                <div class="col-md-8 text-right" style="margin-top: -5px;">
-                  <img src="https://img.icons8.com/color/36/000000/visa.png" />
-                  <img src="https://img.icons8.com/color/36/000000/mastercard.png" />
-                  <img src="https://img.icons8.com/color/36/000000/amex.png" />
-                </div>
-                <br>
-                <div>
-                  <label for="formGroupExampleInput">Nombre del titular de la tarjeta</label>
-                  <input type="text" class="form-control" placeholder="Inserte nombre del titular de la tarjeta">
-                </div>
-                <br>
-                <div>
-                  <label for="formGroupExampleInput">Número de tarjeta</label>
-                  <input type="number" class="form-control" placeholder="Inserte número de tarjeta">
+                <h6>Adulto 1</h6>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Nombre*</label>
+                    <input type="text" class="form-control" placeholder="Inserte nombre del pasajero">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Apellido*</label>
+                    <input type="text" class="form-control" placeholder="Inserte apellido del pasajero">
+                  </div>
                 </div>
                 <br>
                 <div class="row">
-                  <div class="col-sm-3">
-                    <label for="exampleFormControlSelect1">Mes*</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Enero</option>
-                      <option>Febrero</option>
-                      <option>Marzo</option>
-                      <option>Abril</option>
-                      <option>Mayo</option>
-                      <option>Junio</option>
-                      <option>Julio</option>
-                      <option>Agosto</option>
-                      <option>Septiembre</option>
-                      <option>Octubre</option>
-                      <option>Noviembre</option>
-                      <option>Diciembre</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-3">
-                    <label for="exampleFormControlSelect1">Año*</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>2020</option>
-                      <option>2021</option>
-                      <option>2022</option>
-                      <option>2023</option>
-                      <option>2024</option>
-                      <option>2025</option>
-                      <option>2026</option>
-                      <option>2027</option>
-                      <option>2028</option>
-                      <option>2029</option>
-                    </select>
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">Fecha de nacimiento*</label>
+                    <input type="date" id="start" class="form-control" name="trip-start" value="2020-01-01"
+                      min="1920-01-01" max="2020-01-01">
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Código de seguridad*</label>
-                    <input type="number" class="form-control" placeholder="CVV/CVC">
+                    <label for="formGroupExampleInput">DNI/CI*</label>
+                    <input type="number" class="form-control" placeholder="Inserte n° de documento">
                   </div>
                 </div>
                 <br>
-                <div>
-                  <label for="formGroupExampleInput">Dirección de facturación</label>
-                  <input type="text" class="form-control" placeholder="Inserte su dirección de facturación">
+                <h6>Adulto 2</h6>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Nombre*</label>
+                    <input type="text" class="form-control" placeholder="Inserte nombre del pasajero">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Apellido*</label>
+                    <input type="text" class="form-control" placeholder="Inserte apellido del pasajero">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="exampleFormControlSelect1">Fecha de nacimiento*</label>
+                    <input type="date" id="start" class="form-control" name="trip-start" value="2020-01-01"
+                      min="1920-01-01" max="2020-01-01">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="formGroupExampleInput">DNI/CI*</label>
+                    <input type="number" class="form-control" placeholder="Inserte n° de documento">
+                  </div>
                 </div>
               </form>
             </div>
@@ -386,6 +386,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 <footer>
@@ -406,7 +411,7 @@
       <p>teléfono</p>
       <p>Centro de ayuda</p>
     </div>
-    <div class="p-2 bd-highlight"><img src="img/logo.png" alt="Travelers" height="150px"></div>
+    <div class="p-2 bd-highlight"><img src="img/logo.png" class="logo" alt="Travelers"></div>
   </div>
   <hr>
   <div class="d-flex justify-content-around">

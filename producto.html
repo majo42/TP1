@@ -9,46 +9,35 @@
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 <link rel="stylesheet" href="fontawesome/css/all.css">
 
-<style>
-  .body {
-    margin: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .logo {
-    height: 100px;
-  }
-
-  .header {
-    background-color: #beebe9;
-  }
-</style>
+<link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body class="body">
   <header>
     <div class="header">
       <div class="media">
-        <img src="img/logo.png" class="mr-3" alt="..." style="height: 150px; padding: 5px;">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Inicio">
+          <a href="index.html"><img src="img/logo.png" class="logo" alt="Travelers"></a>
+        </button>
         <div class="media-body">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" href="#"><i class="fas fa-heart"></i> Favoritos</a>
+              <a class="nav-link active botones" href="#"><i class="fas fa-heart"></i> Favoritos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-comment"></i> Blog</a>
+              <a class="nav-link botones" href="#"><i class="fas fa-comment"></i> Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="far fa-user-circle"></i></a>
+              <a class="nav-link botones" href="#"><i class="far fa-user-circle"></i></a>
             </li>
           </ul>
         </div>
       </div>
+    </div>
   </header>
   <main>
     <section>
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-light bg-light nav-principal">
         <a class="navbar-brand"><i class="fas fa-home"></i> Inicio</a>
         <a class="navbar-brand"><i class="fas fa-plane"></i> Destinos</a>
         <a class="navbar-brand"><i class="fas fa-bed"></i> Hoteles</a>
@@ -236,6 +225,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 <footer>
@@ -256,7 +250,7 @@
       <p>teléfono</p>
       <p>Centro de ayuda</p>
     </div>
-    <div class="p-2 bd-highlight"><img src="img/logo.png" alt="Travelers" height="150px"></div>
+    <div class="p-2 bd-highlight"><img src="img/logo.png" class="logo" alt="Travelers"></div>
   </div>
   <hr>
   <div class="d-flex justify-content-around">
