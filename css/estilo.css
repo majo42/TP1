@@ -95,10 +95,85 @@ h3 {
 
 /* Producto */
 
+.rio-img {
+  height: 647px;
+}
+
+.card-producto {
+  text-align: center;
+}
+
+.card-producto-header {
+  background-color: #beebe9;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.card-border {
+  border-color: #8ac6d1;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.card-paquete-header {
+  background-color: #beebe9;
+}
+
+.card-extras {
+  border-color: #F9F63E;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.card-extras-header {
+  background-color: #F9F63E;
+}
+
+.card-comprar {
+  border-color: #2ECC48;
+  border-radius: 5px;
+  border-width: 4px;
+}
+
+.card-comprar-texto {
+  text-align: center;
+}
+
+.boton-comprar {
+  margin: 30px;
+}
+
+.perfiles {
+  height: 120px;
+  margin: 10px;
+}
+
+.media-perfiles {
+  background-color: #ffe3ed;
+  border-radius: 5px;
+}
+
 /* Checkout */
 
+.bloques-header {
+  background-color: #beebe9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-
-.div {
+.bloques {
   height: 700px;
+}
+
+.bloques-form {
+  height: 650px;
+}
+
+.bloques-titulos {
+  font-weight: bold;
+}
+
+.boton-guardar {
+  align-items: flex-end;
+  padding: 25px;
 }

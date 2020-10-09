@@ -53,35 +53,37 @@
     <section>
       <div class="row">
         <div class="col-sm-6">
-          <div class="card div">
+          <div class=" card-header bloques-header">
+            <h4 class="card-title">Registro</h4>
+          </div>
+          <div class="card bloques">
             <div class="card-body">
-              <h5 class="card-title">Registro</h5>
               <br>
               <form>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Nombre*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Nombre*</label>
                     <input type="text" class="form-control" placeholder="Inserte su nombre">
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Apellido*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Apellido*</label>
                     <input type="text" class="form-control" placeholder="Inserte su apellido">
                   </div>
                 </div>
                 <br>
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Email*</label>
+                  <label for="exampleFormControlInput1" class="bloques-titulos">Email*</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1"
                     placeholder="nombre@ejemplo.com">
                 </div>
                 <div>
-                  <label for="formGroupExampleInput">Dirección</label>
+                  <label for="formGroupExampleInput" class="bloques-titulos">Dirección</label>
                   <input type="text" class="form-control" placeholder="Inserte su dirección">
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">País*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">País*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>Argentina</option>
                       <option>Bolivia</option>
@@ -92,38 +94,42 @@
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Estado/Provincia*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Estado/Provincia*</label>
                     <input type="text" class="form-control" placeholder="Inserte su estado/provincia">
                   </div>
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Ciudad*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Ciudad*</label>
                     <input type="text" class="form-control" placeholder="Inserte su ciudad">
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Código Postal*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Código Postal*</label>
                     <input type="number" class="form-control" placeholder="Inserte su código postal">
                   </div>
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Teléfono*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Teléfono*</label>
                     <input type="number" class="form-control" placeholder="Inserte su número telefónico">
                   </div>
                 </div>
                 <br>
-                <a href="#" class="btn btn-success">Guardar</a>
+                <div class="boton-guardar">
+                  <a href="#" class="btn btn-success">Guardar</a>
+                </div>
               </form>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card div">
+          <div class=" card-header bloques-header">
+            <h4 class="card-title">Método de pago</h4>
+          </div>
+          <div class="card bloques">
             <div class="card-body">
-              <h5 class="card-title">Método de pago</h5>
               <br>
               <form>
                 <div class="col-md-8 text-right" style="margin-top: -5px;">
@@ -133,18 +139,18 @@
                 </div>
                 <br>
                 <div>
-                  <label for="formGroupExampleInput">Nombre del titular de la tarjeta</label>
+                  <label for="formGroupExampleInput" class="bloques-titulos">Nombre del titular de la tarjeta</label>
                   <input type="text" class="form-control" placeholder="Inserte nombre del titular de la tarjeta">
                 </div>
                 <br>
                 <div>
-                  <label for="formGroupExampleInput">Número de tarjeta</label>
+                  <label for="formGroupExampleInput" class="bloques-titulos">Número de tarjeta</label>
                   <input type="number" class="form-control" placeholder="Inserte número de tarjeta">
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-3">
-                    <label for="exampleFormControlSelect1">Mes*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Mes*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>Enero</option>
                       <option>Febrero</option>
@@ -161,7 +167,7 @@
                     </select>
                   </div>
                   <div class="col-sm-3">
-                    <label for="exampleFormControlSelect1">Año*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Año*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>2020</option>
                       <option>2021</option>
@@ -176,18 +182,19 @@
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Código de seguridad*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Código de seguridad*</label>
                     <input type="number" class="form-control" placeholder="CVV/CVC">
                   </div>
                 </div>
                 <br>
                 <div>
-                  <label for="formGroupExampleInput">Dirección de facturación</label>
+                  <label for="formGroupExampleInput" class="bloques-titulos">Dirección de facturación</label>
                   <input type="text" class="form-control" placeholder="Inserte su dirección de facturación">
                 </div>
               </form>
             </div>
-            <div style="align-items: flex-end; padding: 25px;">
+            <br>
+            <div class="boton-guardar">
               <a href="#" class="btn btn-success">Guardar</a>
             </div>
           </div>
@@ -198,14 +205,16 @@
     <section>
       <div class="row">
         <div class="col-sm-6">
-          <div class="card div">
+          <div class=" card-header bloques-header">
+            <h4 class="card-title">Detalles del paquete</h4>
+          </div>
+          <div class="card bloques">
             <div class="card-body">
-              <h5 class="card-title">Detalles del paquete</h5>
               <br>
               <form>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Cantidad de adultos*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Cantidad de adultos*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>1</option>
                       <option>2</option>
@@ -214,7 +223,7 @@
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Cantidad de niños*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Cantidad de niños*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>1</option>
                       <option>2</option>
@@ -226,7 +235,7 @@
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Paquete seleccionado*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Paquete seleccionado*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>Machu Pichu</option>
                       <option>Río de Janeiro</option>
@@ -234,7 +243,7 @@
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Excursiones*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Excursiones*</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>Sí</option>
                       <option>No</option>
@@ -244,13 +253,13 @@
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Vuelo*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Vuelo*</label>
                     <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-10"
                       min="2021-03-01" max="2025-12-31">
                     <label for="exampleFormControlSelect1">Ida</label>
                   </div>
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Icon</label>
+                    <label for="exampleFormControlSelect1"><i class="fas fa-plane"></i></label>
                     <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-16"
                       min="2021-03-01" max="2025-12-31">
                     <label for="exampleFormControlSelect1">Vuelta</label>
@@ -259,13 +268,13 @@
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Alojamiento*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Alojamiento*</label>
                     <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-10"
                       min="2021-03-01" max="2025-12-31">
                     <label for="exampleFormControlSelect1">Entrada</label>
                   </div>
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Icon</label>
+                    <label for="exampleFormControlSelect1"><i class="fas fa-bed"></i></label>
                     <input type="date" id="start" class="form-control" name="trip-start" value="2021-03-16"
                       min="2021-03-01" max="2025-12-31">
                     <label for="exampleFormControlSelect1">Salida</label>
@@ -274,7 +283,7 @@
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Traslado</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Traslado*</label>
                     <div>
                       <input type="radio" name="traslado" value="si" checked>
                       <label for="si">Sí</label>
@@ -285,7 +294,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Seguro Médico</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Seguro Médico*</label>
                     <div>
                       <input type="radio" name="seguro" value="si" checked>
                       <label for="si">Sí</label>
@@ -297,67 +306,73 @@
                   </div>
                 </div>
                 <br>
-                <a href="#" class="btn btn-success">Guardar</a>
+                <div class="boton-guardar">
+                  <a href="#" class="btn btn-success">Guardar</a>
+                </div>
               </form>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card div">
+          <div class=" card-header bloques-header">
+            <h4 class="card-title">Datos de los pasajeros</h4>
+          </div>
+          <div class="card bloques">
             <div class="card-body">
-              <h5 class="card-title">Datos de los pasajeros</h5>
               <br>
               <form>
-                <h6>Adulto 1</h6>
+                <h5><i class="fas fa-male"></i> Adulto 1</h5>
+                <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Nombre*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Nombre*</label>
                     <input type="text" class="form-control" placeholder="Inserte nombre del pasajero">
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Apellido*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Apellido*</label>
                     <input type="text" class="form-control" placeholder="Inserte apellido del pasajero">
                   </div>
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Fecha de nacimiento*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Fecha de nacimiento*</label>
                     <input type="date" id="start" class="form-control" name="trip-start" value="2020-01-01"
                       min="1920-01-01" max="2020-01-01">
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">DNI/CI*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">DNI/CI*</label>
                     <input type="number" class="form-control" placeholder="Inserte n° de documento">
                   </div>
                 </div>
                 <br>
-                <h6>Adulto 2</h6>
+                <h5><i class="fas fa-male"></i> Adulto 2</h5>
+                <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Nombre*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Nombre*</label>
                     <input type="text" class="form-control" placeholder="Inserte nombre del pasajero">
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">Apellido*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">Apellido*</label>
                     <input type="text" class="form-control" placeholder="Inserte apellido del pasajero">
                   </div>
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-sm-6">
-                    <label for="exampleFormControlSelect1">Fecha de nacimiento*</label>
+                    <label for="exampleFormControlSelect1" class="bloques-titulos">Fecha de nacimiento*</label>
                     <input type="date" id="start" class="form-control" name="trip-start" value="2020-01-01"
                       min="1920-01-01" max="2020-01-01">
                   </div>
                   <div class="col-sm-6">
-                    <label for="formGroupExampleInput">DNI/CI*</label>
+                    <label for="formGroupExampleInput" class="bloques-titulos">DNI/CI*</label>
                     <input type="number" class="form-control" placeholder="Inserte n° de documento">
                   </div>
                 </div>
               </form>
             </div>
-            <div style="align-items: flex-end; padding: 25px;">
+            <div class="boton-guardar">
               <a href="#" class="btn btn-success">Guardar</a>
             </div>
           </div>
@@ -366,11 +381,11 @@
     </section>
     <br>
     <section>
-      <div class="card w-100">
+      <div class="card w-100 suscripcion">
         <div class="card-body">
           <h2 class="card-title">Suscríbete!</h2>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Suscribirse</a>
+          <a href="#" class="btn btn-primary botones">Suscribirse</a>
         </div>
       </div>
     </section>
@@ -396,30 +411,50 @@
 <footer>
   <div class="d-flex justify-content-around">
     <div class="p-2 bd-highlight">
-      <p>Acerca de</p>
-      <p>Sobre Nosotros</p>
-      <p>Política de Privacidad</p>
+      <p class="titulos-footer">Acerca de</p>
+      <a href="#" class="links-footer">
+        <p>Nosotros</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Política de Privacidad</p>
+      </a>
     </div>
     <div class="p-2 bd-highlight">
-      <p>Blog</p>
-      <p>Escribe una reseña</p>
-      <p>Unirse</p>
-      <p>Invita a tus amigos</p>
+      <p class="titulos-footer">Comunidad</p>
+      <a href="#" class="links-footer">
+        <p>Blog</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Escribe una reseña</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Unirse</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Invita a tus amigos</p>
+      </a>
     </div>
     <div class="p-2 bd-highlight">
-      <p>email</p>
-      <p>teléfono</p>
-      <p>Centro de ayuda</p>
+      <p class="titulos-footer">Contacto</p>
+      <a href="#" class="links-footer">
+        <p>contacto@travelers.com.py</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>+595 991 100 987</p>
+      </a>
+      <a href="#" class="links-footer">
+        <p>Centro de ayuda</p>
+      </a>
     </div>
     <div class="p-2 bd-highlight"><img src="img/logo.png" class="logo" alt="Travelers"></div>
   </div>
   <hr>
   <div class="d-flex justify-content-around">
-    <div class="p-2 bd-highlight">Flex item 1</div>
+    <div class="p-2 bd-highlight derechos">© 2020 Travelers. Todos los Derechos Reservados</div>
     <div class="p-2 bd-highlight">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-facebook-square iconos"></i>
+      <i class="fab fa-instagram-square iconos"></i>
+      <i class="fab fa-twitter-square iconos"></i>
     </div>
   </div>
 </footer>
