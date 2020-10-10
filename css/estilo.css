@@ -235,6 +235,8 @@ h3 {
     padding: 10px;
   }
 
+  /* Checkout */
+
   .col-sm-6 {
     display: block!important;
     margin: 10px;
@@ -248,9 +250,7 @@ h3 {
 
   .text-right {
     text-align: left!important;
-}
-
-  /* Checkout */
+  }
 
 }
 
