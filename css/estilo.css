@@ -177,3 +177,114 @@ h3 {
   align-items: flex-end;
   padding: 25px;
 }
+
+/* Responsive */
+
+/* Small devices (landscape phones, 576px and up) */
+
+/* General */
+
+@media (min-width: 576px) {
+  .body {
+    margin: 20px;
+  }
+
+  .logo {
+    height: 75px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .media-body {
+    margin: 10px;
+    margin-top: 25px;
+  }
+  
+  .nav-link {
+    padding: 10px;
+  }
+
+  .nav-item, .navbar-brand, .form-control, .btn-outline-success {
+    font-size: small;
+  }
+
+  .d-flex {
+    display: block!important;
+    text-align: center;
+  }
+
+  /* Index */
+
+  .card-deck {
+    display: block;
+  }
+
+  .card1 {
+    margin: 20px;
+  }
+
+  /* Producto */
+
+  .rio-img {
+    height: 300px;
+  }
+
+  .boton-comprar {
+    margin: 0px;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .col-sm-6 {
+    display: block!important;
+    margin: 10px;
+    max-width: none;
+    flex: none;
+  }
+
+  .bloques {
+    height: auto;
+  }
+
+  .text-right {
+    text-align: left!important;
+}
+
+  /* Checkout */
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  /* General */
+
+  /* Index */
+
+  /* Producto */
+
+  /* Checkout */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  /* General */
+  
+  /* Index */
+
+  /* Producto */
+  
+  /* Checkout */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* General */
+  
+  /* Index */
+
+  /* Producto */
+  
+  /* Checkout */
+}
