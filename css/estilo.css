@@ -95,10 +95,6 @@ h3 {
 
 /* Producto */
 
-.rio-img {
-  height: 647px;
-}
-
 .card-producto {
   text-align: center;
 }
@@ -225,10 +221,6 @@ h3 {
 
   /* Producto */
 
-  .rio-img {
-    height: 300px;
-  }
-
   .boton-comprar {
     margin: 0px;
     margin-top: 30px;
@@ -259,27 +251,65 @@ h3 {
 
   /* General */
 
-  /* Index */
-
-  /* Producto */
+  .d-flex {
+    display: flex!important;
+    text-align: left;
+  }
 
   /* Checkout */
+
+  .col-sm-6 {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+
   /* General */
+
+  .body {
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .logo {
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .media-body {
+    margin: 25px;
+  }
+  
+  .nav-link {
+    padding: 10px;
+  }
+
+  .nav-item, .navbar-brand, .form-control, .btn-outline-success {
+    font-size: larger;
+  }
   
   /* Index */
 
-  /* Producto */
-  
+  .card-deck {
+    display: flex;
+  }
+
   /* Checkout */
+
+  
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
   /* General */
   
   /* Index */
